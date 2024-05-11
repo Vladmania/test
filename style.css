@@ -153,6 +153,9 @@ h1 {
   left: 449px;
   z-index: 0;
 }
+.header__poster__mobail{
+  display: none;
+}
 .running_line {
   display: flex;
   padding: 18px 12px 18px 12px;
@@ -166,14 +169,14 @@ h1 {
   background: rgba(245, 73, 50, 1);
   overflow-x: hidden;
 }
-.running_line__collection_of_texts{
+.running_line__collection_of_texts {
   display: flex;
   animation: stockX 20s linear infinite;
   animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-duration: 50s;
+  animation-play-state: running;
+  animation-duration: 50s;
 }
-.running_line__delimiter{
+.running_line__delimiter {
   width: 10px;
   height: 10px;
   background: white;
@@ -195,20 +198,20 @@ h1 {
   }
 }
 .support {
-  display: flex;
-  max-width: 1366px;
-  margin: auto;
-  padding: 84px 0 0 144px;
+      display: flex;
+        max-width: 1366px;
+        margin: auto;
+        padding: 83px 0 0 0;
 }
 .support__text {
   font-family: "Merriweather";
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48.6px;
-  text-align: left;
-  text-transform: uppercase;
-  width: 55%;
-  margin: 25px 0 0 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 55%;
+    margin: 25px 0 0 72px;
 }
 .support__text__red {
   color: rgba(245, 73, 50, 1);
@@ -220,8 +223,8 @@ h1 {
 .about_the_game {
   display: flex;
   max-width: 1366px;
-  margin: auto;
-  padding: 16px 0 0 86px;
+  margin: 13px auto 0;
+   
 }
 .about_the_game__text {
   font-family: "Merriweather";
@@ -239,6 +242,11 @@ h1 {
   font-family: "Golos Text";
   font-size: 20px;
   border-bottom: 2px black solid;
+}
+.about_the_game__table_row_penultimate{
+  font-family: "Golos Text";
+    font-size: 20px;
+    border-bottom: 2px black solid;
 }
 .about_the_game__table_column__key {
   font-weight: 400;
@@ -270,14 +278,15 @@ h1 {
   padding: 16px 153px 13px 15px;
   border-left: 2px black solid;
 }
-.about_the_game__table_column__value span {
+.about_the_game__table_column__value_end span {
   text-decoration: line-through;
   text-decoration-color: red;
+  margin: 0 7px 0 0;
 }
 table {
   width: 500px;
   border-collapse: collapse;
-  border: 2px solid white;
+  border: 3px solid white;
   margin: 44px 0 0 -16px;
 }
 td {
@@ -295,73 +304,78 @@ td {
   margin: 34px 0 0 0;
   color: rgba(48, 87, 162, 1);
 }
-.stages {
+.stages__container {
   display: grid;
-    grid-template-columns: 394px 394px;
-    gap: 20px;
-    max-width: 1222px;
-    margin: 54px auto 0 auto;
+  grid-template-columns: 394px 394px;
+  gap: 20px;
+  max-width: 1222px;
+  margin: 50px auto 0 auto;
 }
-.stages h3 {
+.stages__container h3 {
   font-family: "Merriweather";
   font-size: 54px;
   font-weight: 400;
   line-height: 64.8px;
   text-align: left;
   text-transform: uppercase;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin: 113px 0px 33px 0px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 113px 0px 33px 0px;
 }
-.stages h3 span {
+.stages__container h3 span {
   display: inline-block;
   text-transform: none;
   font-family: "Golos Text";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    width: 35%;
-    color: rgba(48, 87, 162, 1);
-    margin: 0 0 0 7px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 35%;
+  color: rgba(48, 87, 162, 1);
+  margin: 0 0 0 7px;
 }
-.stages div {
+.stages__cards{
+  display: contents;
+}
+.stages__card__mobail{
+  display: contents;
+}
+.stages__container .stages {
   background-image: url("./Pictures/image23.png");
-    background-color: #e6d7c9;
-    background-blend-mode: color-burn;
-    padding: 20px;
-    display: flex
+  background-color: #e6d7c9;
+  background-blend-mode: color-burn;
+  padding: 20px;
+  display: flex;
 }
-.stages div span{
+.stages__container div span {
   display: flex;
   width: 36px;
   height: 36px;
   background: white;
   border-radius: 50%;
-  font-family: 'Golos Text';
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    margin: 0 18px 0 0;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0 18px 0 0;
 }
 .stages div p {
-  font-family: 'Golos Text';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
+  font-family: "Golos Text";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
-.stages__card1{
+.stages__card1 {
   grid-column-start: 1;
-
 }
 .stages__card3 {
-      grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
 }
 .stages__card6 {
   grid-column-start: 1;
@@ -370,43 +384,47 @@ td {
   grid-column-start: 2;
   grid-column-end: 4;
 }
-.stages img{
+.stages__img__airplane {
   position: relative;
-    bottom: 254px;
-    left: 884px;
+  bottom: 254px;
+  left: 884px;
 }
 .stages__card7 p {
   width: 56%;
 }
-.participants{
-      margin: -54px auto 140px auto;
-        max-width: 1221px;
+.stages__switch__mobail{
+  display: none;
 }
-.participants__title{
+.participants {
+  margin: -54px auto 118px auto;
+  max-width: 1221px;
+  overflow: hidden;
+}
+.participants__title {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
-.participants__title h3{
+.participants__title h3 {
   font-family: "Merriweather";
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 64.8px;
-    text-align: left;
-    text-transform: uppercase;
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 64.8px;
+  text-align: left;
+  text-transform: uppercase;
 }
-.participants__switch{
+.participants__switch {
   display: flex;
-    align-items: center;
-        margin: 0 -1px 2px 0;
+  align-items: center;
+  margin: 0 -1px 2px 0;
 }
 .participants__switch p {
-  font-family: 'Golos Text';
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-        margin: 0px 14px;
+  font-family: "Golos Text";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  margin: 0px 14px;
 }
-.participants__switch__button{
+.participants__switch__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,20 +434,20 @@ td {
   background: black;
   border-radius: 50%;
 }
-.participants__all_participants{
+.participants__all_participants {
   display: flex;
   margin: 59px 0 22px 37px;
 }
-.participants__participant_card{
-    text-align: center;
-    margin: 0 94px 0 0;
+.participants__participant_card {
+  text-align: center;
+  margin: 0 94px 0 0;
 }
-.participants__participant_card h3{
+.participants__participant_card h3 {
   font-family: "Golos Text";
   font-size: 24px;
   font-weight: 600;
   line-height: 28.8px;
-      margin: 25px 0 0 0;
+  margin: 25px 0 0 0;
 }
 .participants__participant_card h4 {
   font-family: "Golos Text";
@@ -439,7 +457,7 @@ td {
   margin: 6px 0 0 0;
 }
 .participants__participant_card button {
-width: 113px;
+  width: 113px;
   height: 35px;
   border-radius: 62px;
   border: 1px rgba(48, 87, 162, 1) solid;
@@ -451,17 +469,27 @@ width: 113px;
   font-weight: 500;
   line-height: 19.2px;
 }
-footer{
+footer {
   height: 150px;
   background: rgba(233, 222, 212, 1);
 }
 footer div {
   margin: auto;
-    max-width: 1221px;
-    padding: 40px 0 0 0;
-    font-family: Golos Text;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    text-align: left;
+  max-width: 1221px;
+  padding: 40px 0 0 0;
+  font-family: Golos Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+@media screen and (width < 1620px) {
+  .header__content{
+    overflow: hidden;
   }
+}
+
+@media screen and (width < 1365px) {
+  
+}
