@@ -16,7 +16,7 @@
   <body>
     <header>
       <div class="header__content">
-        <div style="margin: 0 0 0 -9px">
+        <div style="margin: 2px 0 0 -9px">
           <div class="header__logo">
             <img src="./Pictures/logo.png" alt="конь" />
           </div>
@@ -32,12 +32,16 @@
               васюкинского турнира по шахматам
             </p>
             <div class="header__button">
-              <button class="header__button__support">
-                Поддержать шахматную мысль
-              </button>
-              <button class="header__button__details">
-                Подробнее о турнире
-              </button>
+              <a href="#support">
+                <button class="header__button__support" href="#support">
+                  Поддержать шахматную мысль
+                </button>
+              </a>
+              <a href="#details">
+                <button class="header__button__details">
+                  Подробнее о турнире
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -82,7 +86,11 @@
             src="./Pictures/chess.png"
             alt="конь"
           />
-          <img class="header__poster__mobail" src="./Pictures/Groupheader.png" alt="" />
+          <img
+            class="header__poster__mobail"
+            src="./Pictures/Groupheader.png"
+            alt=""
+          />
         </div>
       </div>
     </header>
@@ -116,18 +124,24 @@
         </div>
       </div>
     </section>
-    <section class="support">
+    <section class="support" id="support">
       <div class="support__text">
-        Чтобы поддержать Международный васюкинский турнир<span class="support__text__divided"> посетите лекцию
-        на тему:<span class="support__text__red">
-          «Плодотворная дебютная идея»</span></span>
+        Чтобы поддержать Международный васюкинский турнир<span
+          class="support__text__divided"
+        >
+          посетите лекцию на тему:<span class="support__text__red">
+            «Плодотворная дебютная идея»</span
+          ></span
+        >
       </div>
-      <div>
+      <div class="support__img__container">
         <img class="support__img" src="./Pictures/Frame 48095655.png" alt="" />
       </div>
     </section>
-    <section class="about_the_game">
-      <div style="margin: 0px 0 0 43px;"><img src="./Pictures/Frame 48095654.png" /></div>
+    <section class="about_the_game" id="details">
+      <div style="margin: 0px 0 0 43px">
+        <img src="./Pictures/Frame 48095654.png" />
+      </div>
       <dit style="margin: 50px 0 0 18px">
         <h3 class="about_the_game__text">
           и Сеанс
@@ -146,7 +160,7 @@
               Дата и время мероприятия:
             </td>
             <td class="about_the_game__table_column__value">
-              22 июня 1927 г.  в 18:00
+              22 июня 1927 г. в 18:00
             </td>
           </tr>
           <tr class="about_the_game__table_row">
@@ -164,7 +178,7 @@
               Взнос на телеграммы:
             </td>
             <td class="about_the_game__table_column__value_end">
-              <span>100 руб.  </span>   21 руб. 16 коп.
+              <span>100 руб. </span> 21 руб. 16 коп.
             </td>
           </tr>
         </table>
@@ -181,62 +195,66 @@
         </h3>
         <div class="stages__cards">
           <div class="stages__card__mobail">
-        <div class="stages stages__card1">
-          <span>1</span>
-          <p>Строительство железнодорожной магистрали Москва-Васюки</p>
-        </div>
-        <div class="stages stages__card2">
-          <span>2</span>
-          <p>
-            Открытие фешенебельной гостиницы «Проходная пешка» и других
-            небоскрёбов
-          </p>
-        </div>
-        </div>
-        <div class="stages__card__mobail">
-        <div class="stages stages__card3">
-          <span>3</span>
-          <p>
-            Поднятие сельского хозяйства в радиусе на тысячу километров:
-            производство овощей, фруктов, икры, шоколадных конфет
-          </p>
-        </div>
-        </div>
-        <div class="stages__card__mobail">
-        <div class="stages stages__card4">
-          <span>4</span>
-          <p>Строительство дворца для турнира</p>
-        </div>
-        <div class="stages stages__card5">
-          <span>5</span>
-          <p>Размещение гаражей для гостевого автотранспорта</p>
-        </div>
-        </div>
-        <div class="stages__card__mobail">
-        <div class="stages stages__card6">
-          <span>6</span>
-          <p>
-            Постройка сверхмощной радиостанции для передачи всему миру
-            сенсационных результатов
-          </p>
-        </div>
-        </div>
-        <div class="stages__card__mobail">
-        <div class="stages stages__card7">
-          <span>7</span>
-          <p>
-            Создание аэропорта «Большие Васюки» с регулярным отправлением
-            почтовых самолётов и дирижаблей во все концы света, включая
-            Лос-Анжелос и Мельбурн
-          </p>
-        </div>
-        </div>
+            <div class="stages stages__card1">
+              <span>1</span>
+              <p>Строительство железнодорожной магистрали Москва-Васюки</p>
+            </div>
+            <div class="stages stages__card2">
+              <span>2</span>
+              <p>
+                Открытие фешенебельной гостиницы «Проходная пешка» и других
+                небоскрёбов
+              </p>
+            </div>
+          </div>
+          <div class="stages__card__mobail">
+            <div class="stages stages__card3">
+              <span>3</span>
+              <p>
+                Поднятие сельского хозяйства в радиусе на тысячу километров:
+                производство овощей, фруктов, икры, шоколадных конфет
+              </p>
+            </div>
+          </div>
+          <div class="stages__card__mobail">
+            <div class="stages stages__card4">
+              <span>4</span>
+              <p>Строительство дворца для турнира</p>
+            </div>
+            <div class="stages stages__card5">
+              <span>5</span>
+              <p>Размещение гаражей для гостевого автотранспорта</p>
+            </div>
+          </div>
+          <div class="stages__card__mobail">
+            <div class="stages stages__card6">
+              <span>6</span>
+              <p>
+                Постройка сверхмощной радиостанции для передачи всему миру
+                сенсационных результатов
+              </p>
+            </div>
+          </div>
+          <div class="stages__card__mobail">
+            <div class="stages stages__card7">
+              <span>7</span>
+              <p>
+                Создание аэропорта «Большие Васюки» с регулярным отправлением
+                почтовых самолётов и дирижаблей во все концы света, включая
+                Лос-Анжелос и Мельбурн
+              </p>
+            </div>
+          </div>
         </div>
         <img class="stages__img__airplane" src="./Pictures/airplane.png" />
         <div class="stages__switch__mobail">
-          <div class="stages__switch__mobail__button"><img src="./Pictures/Vector 92.png" alt="" /></div>
-          <p>3 / 6</p>
-          <div class="stages__switch__mobail__button"><img src="./Pictures/Vector 92 (1).png" alt="" /></div>
+          <div class="stages__switch__mobail__button_left">
+            <img src="./Pictures/Vector 92.png" alt="" />
+          </div>
+          <div class="stages__switch__number"></div>
+          <div class="stages__switch__mobail__button_right">
+            <img src="./Pictures/Vector 92 (1).png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -244,11 +262,11 @@
       <div class="participants__title">
         <h3>Участники турнира</h3>
         <div class="participants__switch">
-          <span class="participants__switch__button"
+          <span class="participants__switch__button_left"
             ><img src="./Pictures/Vector 92.png" alt=""
           /></span>
-          <p>3 / 6</p>
-          <span class="participants__switch__button"
+          <p class="participants__switch__number_of_participants"></p>
+          <span class="participants__switch__button_right"
             ><img src="./Pictures/Vector 92 (1).png" alt=""
           /></span>
         </div>
@@ -290,6 +308,11 @@
           <h4>Чемпион мира по шахматам</h4>
           <button>Подробнее</button>
         </div>
+      </div>
+      <div class="participants__switch_mobile">
+        <span class="participants__switch__button_left_mobile"><img src="./Pictures/Vector 92.png" alt="" /></span>
+        <p class="participants__switch__number_of_participants_mobile">1/6</p>
+        <span class="participants__switch__button_right_mobile"><img src="./Pictures/Vector 92 (1).png" alt="" /></span>
       </div>
     </section>
     <section class="running_line">
